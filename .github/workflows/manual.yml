@@ -1,4 +1,4 @@
-name: M3U Playlist Processor
+name: EPG update
 
 on:
   schedule:
