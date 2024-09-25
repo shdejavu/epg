@@ -30,7 +30,7 @@ jobs:
 
     - name: Download and concatenate XML files
       run: |
-        curl https://raw.githubusercontent.com/shdejavu/epg/master/guide.xml >jp.xml
+        curl https://assets.livednow.com/epg.xml >live.xml
         python epgmerge.py
           
     - name: Commit changes
