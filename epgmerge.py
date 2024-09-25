@@ -1,9 +1,9 @@
 import xml.etree.ElementTree as ET
 
 # File paths (input and output)
-input_file1 = 'epg.xml'  # Replace with the first EPG file path
+input_file1 = 'guide.xml'  # Replace with the first EPG file path
 input_file2 = 'jp.xml'  # Replace with the second EPG file path
-output_file = 'guide.xml'  # Output file path
+output_file = 'epg.xml'  # Output file path
 
 # Parse the first XML file
 tree1 = ET.parse(input_file1)
