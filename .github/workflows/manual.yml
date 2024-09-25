@@ -27,6 +27,11 @@ jobs:
       run: |
           npm install
           npm run grab -- --site=tvguide.myjcom.jp --output=guide.xml
+
+    - name: Download and concatenate XML files
+      run: |
+        curl https://raw.githubusercontent.com/shdejavu/epg/master/guide.xml >jp.xml
+        python epgmerge.py
           
     - name: Commit changes
       run: |
