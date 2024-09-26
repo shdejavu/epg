@@ -19,8 +19,8 @@ input_file1 = 'guide.xml'  # Replace with the first EPG file path
 input_file2 = 'live.xml'  # Replace with the second EPG file path
 output_file = 'epg.xml'  # Output file path
 
-ensure_encoding_declaration(input_file1)
-ensure_encoding_declaration(input_file2)
+ensure_encoding(input_file1)
+ensure_encoding(input_file2)
 
 # Parse the first XML file
 tree1 = ET.parse(input_file1)
