@@ -28,9 +28,9 @@ jobs:
           npm install
           npm run grab -- --site=tvguide.myjcom.jp --output=guide.xml
 
-    - name: Download and concatenate XML files
+    - name: curl -L -o live.xml "https://assets.livednow.com/epg.xml"
       run: |
-        curl -L -o live.xml "https://assets.livednow.com/epg.xml"
+        wget --user-agent="Mozilla/5.0" "https://assets.livednow.com/epg.xml" -O live.xml
         python epgmerge.py
           
     - name: Commit changes
