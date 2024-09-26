@@ -1,9 +1,26 @@
 import xml.etree.ElementTree as ET
 
+# Function to add encoding declaration if missing
+def ensure_encoding(file_path):
+    with open(file_path, 'r+', encoding='utf-8') as f:
+        content = f.read()
+
+        # Check if encoding declaration exists
+        if not content.startswith('<?xml'):
+            # Add the encoding declaration at the start of the file
+            content = '<?xml version="1.0" encoding="UTF-8"?>\n' + content
+
+            # Move the file pointer to the beginning and overwrite the file
+            f.seek(0)
+            f.write(content)
+
 # File paths (input and output)
 input_file1 = 'guide.xml'  # Replace with the first EPG file path
 input_file2 = 'live.xml'  # Replace with the second EPG file path
 output_file = 'epg.xml'  # Output file path
+
+ensure_encoding_declaration(input_file1)
+ensure_encoding_declaration(input_file2)
 
 # Parse the first XML file
 tree1 = ET.parse(input_file1)
