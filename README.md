@@ -172,4 +172,6 @@ And thank you to everyone who has already contributed!
 ## License
 
 [![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](LICENSE)
-000D00-GRUDP0-HRZDWM-FNACMH-JBRPKT-PUZUCU-0QNQWZ-M1GX1H-REM3U7-UYAXZ7-84VXRB
+User: PassMark Software
+
+Key : 000D00-GRUDP0-HRZDWM-FNACMH-JBRPKT-PUZUCU-0QNQWZ-M1GX1H-REM3U7-UYAXZ7-84VXRB
